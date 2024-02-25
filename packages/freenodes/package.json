@@ -1,0 +1,49 @@
+{
+  "name": "staker-freenodes",
+  "version": "0.51.0",
+  "description": "free accessible nodes for Ethereum and compatible chains",
+  "files": [
+    "dist/**",
+    "src/**"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel --root-mode=upward ./src --out-dir ./dist --copy-files",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gasolin/stakerwatch.git"
+  },
+  "keywords": [
+    "ethereum",
+    "xdai",
+    "bsc",
+    "matic",
+    "polygon",
+    "zksync",
+    "optimism",
+    "heco"
+  ],
+  "author": "Fred Lin <gasolin+saihubot@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gasolin/stakerwatch/issues"
+  },
+  "homepage": "http://stakerwat.ch/",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.7",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/register": "^7.17.7",
+    "eslint": "^8.11.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  },
+  "gitHead": "221dba935128f71558ed97e65d16ccb7fb85db03"
+}
